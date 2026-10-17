@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="画家・辻野幸枝の公式サイト。絵画作品、小説、展示会情報、作品販売をご紹介します。">
+<title>辻野幸枝 公式サイト | 絵画と物語の世界</title>
+<style>
+:root{--ink:#30251f;--wine:#722f42;--gold:#b49457;--cream:#faf7f0;--muted:#776d64}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif JP",serif;line-height:1.9}
+a{color:inherit}
+header{padding:24px 6%;display:flex;justify-content:space-between;align-items:center;gap:20px;border-bottom:1px solid #e6dccb;background:#fffdf8}
+.brand{font-size:24px;letter-spacing:.12em;font-weight:bold;color:var(--wine)}
+.brand small{display:block;font-size:11px;letter-spacing:.2em;color:var(--muted);font-weight:normal}
+nav{display:flex;flex-wrap:wrap;gap:18px;font-size:13px}
+nav a{text-decoration:none}
+nav a:hover{color:var(--wine)}
+.hero{min-height:440px;padding:80px 8%;display:flex;align-items:center;background:linear-gradient(120deg,#f1e7d9,#fbf8f1 60%,#e8d9ce)}
+.hero-inner{max-width:760px}
+.eyebrow{color:var(--wine);letter-spacing:.25em;font-size:12px}
+h1{font-size:clamp(34px,6vw,60px);font-weight:normal;line-height:1.5;margin:15px 0}
+.hero p{max-width:590px}
+.button{display:inline-block;margin-top:18px;padding:11px 25px;background:var(--wine);color:white;text-decoration:none;font-size:14px}
+section{padding:70px 8%;max-width:1200px;margin:auto}
+.section-title{text-align:center;margin-bottom:35px}
+.section-title h2{font-size:30px;font-weight:normal;margin:0}
+.section-title p{font-size:12px;letter-spacing:.2em;color:var(--gold);margin:4px}
+.intro{max-width:760px;margin:auto;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{background:#fffdf8;border:1px solid #e8dfd2;padding:22px}
+.art-placeholder{height:190px;background:linear-gradient(145deg,#e7d6bd,#b88e7a 48%,#6c3744);display:flex;align-items:center;justify-content:center;color:white;text-align:center;letter-spacing:.15em;padding:15px}
+.card h3{font-size:19px;font-weight:normal;margin:15px 0 6px}
+.card p{font-size:14px;color:var(--muted);margin:0 0 10px}
+.card a,.text-link{color:var(--wine);font-size:14px}
+.band{background:#efe5d8;max-width:none}
+.band section{max-width:1000px}
+.profile{display:grid;grid-template-columns:1fr 2fr;gap:35px;align-items:center}
+.profile-mark{min-height:210px;background:#e2d2bd;display:flex;align-items:center;justify-content:center;color:var(--wine);font-size:28px;letter-spacing:.15em}
+ul{padding-left:1.3em}
+footer{text-align:center;padding:35px 20px;background:#35252b;color:#f8f0e5;font-size:12px}
+footer a{color:#f8dfb3}
+.note{font-size:12px;color:var(--muted);text-align:center;margin-top:22px}
+@media(max-width:700px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{min-height:360px;padding:55px 7%}section{padding:50px 6%}.grid{grid-template-columns:1fr}.art-placeholder{height:220px}.profile{grid-template-columns:1fr}.profile-mark{min-height:130px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">辻野幸枝<small>ARTIST & STORYTELLER</small></div>
+  <nav aria-label="メインメニュー">
+    <a href="#about">プロフィール</a>
+    <a href="#art">絵画作品</a>
+    <a href="#novel">小説</a>
+    <a href="#exhibition">展示会</a>
+    <a href="#contact">販売・お問い合わせ</a>
+  </nav>
+</header>
+<main>
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">WELCOME TO MY WORLD</div>
+      <h1>線と色彩、<br>そして物語。</h1>
+      <p>画家・辻野幸枝の公式サイトへようこそ。絵画と小説、それぞれの表現で紡ぐ世界をご紹介いたします。</p>
+      <a class="button" href="#art">作品を見る</a>
+    </div>
+  </div>
+  <section id="about">
+    <div class="section-title"><h2>PROFILE</h2><p>プロフィール</p></div>
+    <div class="intro">
+      <p>辻野幸枝。画家として絵画を制作する傍ら、物語やイラストレーションの表現にも取り組んでおります。色彩や素材の魅力を大切に、一つひとつの作品に想いを込めて制作しています。</p>
+    </div>
+  </section>
+  <section id="art">
+    <div class="section-title"><h2>ARTWORKS</h2><p>絵画作品</p></div>
+    <div class="grid">
+      <article class="card"><div class="art-placeholder">ROSES</div><h3>薔薇の作品</h3><p>色彩豊かな薔薇を描いた作品をご紹介します。</p><a href="#contact">作品について問い合わせる →</a></article>
+      <article class="card"><div class="art-placeholder">GOLD LEAF</div><h3>金箔を用いた作品</h3><p>金箔ならではの輝きと質感を生かした絵画。</p><a href="#contact">作品について問い合わせる →</a></article>
+      <article class="card"><div class="art-placeholder">MOUNT FUJI</div><h3>富士山の作品</h3><p>富士山をモチーフにした作品をご紹介します。</p><a href="#contact">作品について問い合わせる →</a></article>
+    </div>
+    <p class="note">※現在は作品紹介の仮表示です。後から実際の作品写真や販売ページへのリンクに変更できます。</p>
+  </section>
+  <div class="band">
+    <section id="novel">
+      <div class="section-title"><h2>STORIES</h2><p>小説・物語</p></div>
+      <div class="intro">
+        <p>絵画とはまた異なる表現で描く、物語の世界。作品のあらすじや公開先、書籍・関連作品の情報をこちらに掲載していきます。</p>
+        <p>小説のタイトルや紹介文、公開サイトのURLは、作品に合わせて追加できます。</p>
+      </div>
+    </section>
+  </div>
+  <section id="exhibition">
+    <div class="section-title"><h2>EXHIBITIONS</h2><p>展示会・活動情報</p></div>
+    <div class="intro">
+      <p>展示会やグループ展などの参加情報をお知らせいたします。</p>
+      <p>開催日・会場・出展作品など、最新の情報をこちらに追加していきます。</p>
+    </div>
+  </section>
+  <div class="band">
+    <section id="contact">
+      <div class="section-title"><h2>SHOP & CONTACT</h2><p>作品販売・お問い合わせ</p></div>
+      <div class="intro">
+        <p>原画・複製画の購入、作品についてのご質問、展示に関するご相談などは、下記よりお問い合わせください。</p>
+        <p>販売ページやお問い合わせ先のリンクは、準備ができた段階で設定いたします。</p>
+        <p>メールアドレスや販売サイトのURLは、まだ登録されていません。</p>
+      </div>
+    </section>
+  </div>
+</main>
+<footer>
+  <p>辻野幸枝 公式サイト</p>
+  <p>作品の無断転載・無断使用はご遠慮ください。</p>
+  <p>© 辻野幸枝</p>
+</footer>
+</body>
+</html>
