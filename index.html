@@ -56,6 +56,62 @@ footer{text-align:center;padding:35px 20px;background:#35252b;color:#f8f0e5;font
 footer a{color:#f8dfb3}
 .note{font-size:12px;color:var(--muted);text-align:center;margin-top:22px}
 @media(max-width:700px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{min-height:360px;padding:55px 7%}section{padding:50px 6%}.grid{grid-template-columns:1fr}.art-placeholder{height:220px}.profile{grid-template-columns:1fr}.profile-mark{min-height:130px}}
+
+/* ===== ホバー＆固定メニュー ===== */
+
+/* ① 上部メニューをスクロールしても固定 */
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+}
+
+/* ② 絵画作品の画像：少し浮く＋影 */
+#art .card img{
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
+  cursor:pointer;
+}
+
+#art .card img:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 18px rgba(48,37,31,0.18);
+}
+
+/* ② 小説・物語の画像：少し浮く＋影 */
+#novel img{
+  transition:transform 0.25s ease, box-shadow 0.25s ease;
+  cursor:pointer;
+}
+
+#novel img:hover{
+  transform:translateY(-4px);
+  box-shadow:0 8px 18px rgba(48,37,31,0.18);
+}
+
+/* ③ メルカリの販売ボタン：少し拡大＋少し薄くする */
+#shop a[href*="mercari"]{
+  transition:transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
+  cursor:pointer;
+}
+
+#shop a[href*="mercari"]:hover{
+  transform:scale(1.03);
+  opacity:0.82;
+  box-shadow:0 6px 16px rgba(48,37,31,0.18);
+}
+
+/* ③ リンク欄のメルカリ画像：少し拡大＋少し薄くする */
+#links a[href*="mercari"]{
+  display:inline-block;
+  transition:transform 0.25s ease, opacity 0.25s ease;
+  cursor:pointer;
+}
+
+#links a[href*="mercari"]:hover{
+  transform:scale(1.06);
+  opacity:0.82;
+}
+  
 </style>
 </head>
 <body>
