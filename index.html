@@ -100,16 +100,17 @@ header{
   box-shadow:0 6px 16px rgba(48,37,31,0.18);
 }
 
-/* ③ リンク欄のメルカリ画像：少し拡大＋少し薄くする */
-#links a[href*="mercari"]{
+/* ③ 一番下のリンク画像：すべてホバー効果 */
+#links a{
   display:inline-block;
-  transition:transform 0.25s ease, opacity 0.25s ease;
+  transition:transform 0.25s ease, opacity 0.25s ease, box-shadow 0.25s ease;
   cursor:pointer;
 }
 
-#links a[href*="mercari"]:hover{
+#links a:hover{
   transform:scale(1.06);
   opacity:0.82;
+  box-shadow:0 6px 16px rgba(48,37,31,0.18);
 }
   
 </style>
